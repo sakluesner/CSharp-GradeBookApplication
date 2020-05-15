@@ -42,15 +42,15 @@ namespace GradeBook.UserInterfaces
             var name = parts[1];
             var type = parts[2];
 
-            var gradeBook = new BaseGradeBook(name);
+            BaseGradeBook gradeBook;
 
             if (type == "standard")
             {
-                //StandardGradeBook gradeBook = new StandardGradeBook(name);
+                gradeBook = new StandardGradeBook(name);
             }
             else if (type == "ranked")
             {
-                //RankedGradeBook gradeBook = new RankedGradeBook(name);
+                gradeBook = new RankedGradeBook(name);
             }
             else
             {
